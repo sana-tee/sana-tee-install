@@ -24,7 +24,7 @@ sudo ./sanatee start --verbosity 5 --full-node --config /root/ant.yaml --debug-a
 
 
 
-# b.d ocker way
+# b.Docker way
 
 1. Register first
 
@@ -38,7 +38,7 @@ A mykeys directory will be generated at the level of your keys directory with tw
 
 2. Use the Docker import function to import the Docker package
 
-Docker load - i. / sanatee0.1.3. Tar
+docker load -i ./sanatee0.1.3.tar
 
 
 
@@ -46,6 +46,4 @@ Docker load - i. / sanatee0.1.3. Tar
 
 
 
-
-
-docker run -d --restart=always -p 1763:1633 -p 1764:1634 -p 1765:1635 -v /root/ant.yaml:/root/ant.yaml -v /data/013:/home/ant --name sana-013 Sana /tee:v0.1.3 start --verbosity 5 --full-node --config /root/ant.yaml --debug-api-enable
+docker run -d --restart=always -p 1763:1633 -p 1764:1634 -p 1765:1635 -v /root/ant.yaml:/root/ant.yaml -v /data/013:/home/ant  --name sana-013 sana/tee:v0.1.3.1019 start --verbosity 5 --full-node --config /root/ant.yaml --debug-api-enable

@@ -23,5 +23,5 @@ docker load -i ./sanatee0.1.3.tar
 3.使用docker 重新建立容器
 
 
-docker run -d --restart=always -p 1763:1633 -p 1764:1634 -p 1765:1635 -v /root/ant.yaml:/root/ant.yaml -v /data/013:/home/ant  --name sana-013 sana/tee:v0.1.3 start --verbosity 5 --full-node --config /root/ant.yaml --debug-api-enable
+docker run -d --restart=always -p 1763:1633 -p 1764:1634 -p 1765:1635 -v /root/ant.yaml:/root/ant.yaml -v /data/013:/home/ant  --name sana-013 sana/tee:v0.1.3.1019 start --verbosity 5 --full-node --config /root/ant.yaml --debug-api-enable
 

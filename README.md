@@ -18,10 +18,10 @@ sudo ./sanatee start --verbosity 5 --full-node --config /root/ant.yaml --debug-a
   会在你的keys目录同级生成一个mykeys目录，里面有两个文件device.key和hahano.key,这些文件和你的key一起保存，这样下次就可以直接使用
 
 2.使用docker导入功能导入docker 包
-docker load -i ./sanatee0.1.3.tar
+docker load -i ./sanateev0.1.4.1022.tar
 
 3.使用docker 重新建立容器
 
 
-docker run -d --restart=always -p 1763:1633 -p 1764:1634 -p 1765:1635 -v /root/ant.yaml:/root/ant.yaml -v /data/013:/home/ant  --name sana-013 sana/tee:v0.1.3.1019 start --verbosity 5 --full-node --config /root/ant.yaml --debug-api-enable
+docker run -d --restart=always -p 1763:1633 -p 1764:1634 -p 1765:1635 -v /root/ant.yaml:/root/ant.yaml -v /data/013:/home/ant  --name sana-013 sana/tee:v0.1.4.1022 start --verbosity 5 --full-node --config /root/ant.yaml --debug-api-enable
 
